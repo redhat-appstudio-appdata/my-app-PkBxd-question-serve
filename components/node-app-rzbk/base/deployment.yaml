@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: node-app-rzbk
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload:PkBxd-node-app-rzbk
+      - image: quay.io/redhat-appstudio/user-workload@sha256:fe2a04ab3d2b66e9aee88b2744c4d57a6727c50d3e8b7df8b019198b5bba09da
         name: my-nodejs
         ports:
         - containerPort: 3001
