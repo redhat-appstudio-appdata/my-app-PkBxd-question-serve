@@ -1,0 +1,21 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: node-app-rzbk
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: node-app-rzbk
+    app.kubernetes.io/part-of: my-app
+  name: node-app-rzbk
+  namespace: ralphjbean-tenant
+spec:
+  path: /
+  port:
+    targetPort: 3001
+  to:
+    kind: Service
+    name: node-app-rzbk
+    weight: null
+status: {}
