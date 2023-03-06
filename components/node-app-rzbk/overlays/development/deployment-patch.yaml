@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: node-app-rzbk
+  namespace: ralphjbean-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:fe2a04ab3d2b66e9aee88b2744c4d57a6727c50d3e8b7df8b019198b5bba09da
+        name: my-nodejs
+        resources: {}
+status: {}
